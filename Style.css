@@ -1,0 +1,391 @@
+body {
+    background-color: hsl(218, 28%, 13%);
+    color: white;
+    font-family: 'Raleway', sans-serif; 
+}
+header {
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 20px 40px; 
+    justify-content: space-between
+}
+.header-content {
+    display: flex;
+    gap: 50px;
+    margin-top: 50px;
+}
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+}
+.cards-main {
+    display: flex;
+    flex-wrap: wrap;         
+    justify-content: center;
+    padding: 100px;
+    gap: 100px 250px;
+}
+.cards-content {
+    text-align: center;
+}
+.main-2-content {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    padding: 70px;
+}
+.Text-main2 {
+    display: flex;
+    flex-direction: column;
+}
+.coment-people {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 30px;
+    
+}
+.people-1,
+.people-2,
+.people-3
+{
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    background-color: hsl(219, 30%, 18%);
+    gap: 50px;
+    padding: 25px;
+    box-shadow: 5px 5px 10px black;
+    max-width: 1020px;
+    border-radius: 10px;
+}
+.people-photo {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.img-people {
+    max-width: 50px;
+    border-radius: 100px;
+}
+.early-access{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    top: 50px;
+    z-index: 2;
+}
+.early-access-content {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(219, 30%, 18%);
+    padding: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
+    border-radius: 10px;
+}
+input{
+    border-radius: 100px;
+    padding: 10px 170px;
+}
+
+button {
+    background-color: hsl(176, 68%, 64%);
+    border-radius: 100px;
+    padding: 10px 40px;
+    color: aliceblue;
+    cursor: pointer;
+}
+footer {
+    background-color: hsl(216, 53%, 9%);
+    padding: 100px;
+}
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.footer-P {
+    gap: 20px;
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+}
+header a,
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+
+    body {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        overflow-x: hidden;
+    }
+
+    main {
+        width: 100%;
+    }
+
+
+    /* HEADER */
+
+    header {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 25px 20px;
+    }
+
+    header img {
+        width: 80px;
+    }
+
+    .header-content {
+        gap: 20px;
+        font-size: 10px;
+    }
+
+
+    /* PRIMEIRA SEÇÃO */
+
+    .main-content {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .main-content > img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .main-content h1 {
+        font-size: 22px;
+        line-height: 1.3;
+    }
+
+    .main-content p {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .main-content br {
+        display: none;
+    }
+
+    .main-content button {
+        width: 220px;
+    }
+
+
+    /* CARDS */
+
+    .cards-main {
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 80px;
+        padding: 100px 20px;
+    }
+
+    .cards-main > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 80px;
+    }
+
+    .cards-content {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .cards-content img {
+        width: 60px;
+    }
+
+    .cards-content h1 {
+        font-size: 15px;
+    }
+
+    .cards-content p {
+        font-size: 11px;
+        line-height: 1.5;
+    }
+
+    .cards-content br {
+        display: none;
+    }
+
+
+    /* STAY PRODUCTIVE */
+
+    .main-2-content {
+        width: 100%;
+        box-sizing: border-box;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        padding: 50px 20px;
+    }
+
+    .main-2-content > div {
+        width: 100%;
+    }
+
+    .main-2-content > div:first-child {
+        text-align: center;
+    }
+
+    .main-2-content > div img {
+        width: 100%;
+        max-width: 330px;
+    }
+
+    .Text-main2 {
+        width: 100%;
+    }
+
+    .Text-main2 h1 {
+        font-size: 20px;
+    }
+
+    .Text-main2 p {
+        font-size: 11px;
+        line-height: 1.5;
+    }
+
+    .Text-main2 br {
+        display: none;
+    }
+
+    .link-main-2 {
+        font-size: 11px;
+    }
+
+
+    /* DEPOIMENTOS */
+
+    .coment-people {
+        width: 100%;
+        box-sizing: border-box;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 60px 25px;
+    }
+
+    .people-1,
+    .people-2,
+    .people-3 {
+        width: 100%;
+        max-width: 320px;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .people-1 h1,
+    .people-2 h1,
+    .people-3 h1 {
+        font-size: 10px;
+        line-height: 1.5;
+    }
+
+    .people-1 br,
+    .people-2 br,
+    .people-3 br {
+        display: none;
+    }
+
+    .people-photo {
+        gap: 10px;
+    }
+
+    .img-people {
+        width: 35px;
+        height: 35px;
+    }
+
+
+    /* EARLY ACCESS */
+
+    .early-access {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+
+    .early-access-content {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 30px 20px;
+    }
+
+    .early-access-content h1 {
+        font-size: 18px;
+    }
+
+    .early-access-content p {
+        font-size: 11px;
+        line-height: 1.5;
+    }
+
+    .early-access-content p br {
+        display: none;
+    }
+
+    .early-access-content-form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    input {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 12px 20px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 70px 30px 40px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer-P {
+        margin: 0;
+    }
+
+    nav {
+        gap: 15px;
+    }
+}
